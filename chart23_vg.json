@@ -19,7 +19,7 @@
         "height" : 240,
         "width" : 300,
         "data": {
-          "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/country_award.csv"
+          "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/country_award.csv"
         },
         "mark": {
           "type": "bar",
@@ -53,7 +53,7 @@
         "height" : 240,
         "width" :  300,
         "data": {
-          "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/cuisine_award.csv"
+          "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/cuisine_award.csv"
         },
         "transform": [{"filter": "datum.Award == Award"}],
         "encoding": {
