@@ -30,14 +30,14 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/ne_10m.json",
+        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/ne_10m.json",
         "format": {"type": "topojson", "feature": "ne_10m_admin_0_countries"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/michelin_cleaned.csv"
+        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/michelin_cleaned.csv"
       },
       "params": [
         {
