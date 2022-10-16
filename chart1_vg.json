@@ -2,31 +2,79 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 890,
   "height": 500,
+  
   "params": [
+    {"name": "tx", "update": "width / 2"},
+    {"name": "ty", "update": "height / 2"},
     {
-      "name": "zoom_level",
-      "value": 2000,
-      "bind": {
-        "input": "range",
-        "min": 1000,
-        "max": 3000,
-        "step": 100,
-        "name": "Zoom: "
-      }
+      "name": "scale",
+      "value": 2500,
+      "on": [
+        {
+          "events": {"type": "wheel", "consume": true},
+          "update": "clamp(scale * pow(1.001, -event.deltaY * pow(16, event.deltaMode)), 1000, 20000)"
+        }
+      ]
     },
     {
-      "name": "center_to",
-      "value": [2.03, 46.81],
-      "bind": {
-        "input": "select",
-        "options": [[2.03, 46.81], [12.59, 43.16], [10.01, 51.04],
-        [-3.29, 40.57], [-1.72, 52.18], [4.77, 50.56], [8.02, 46.95]],
-        "labels": ["France", "Italy", "Germany", "Spain", "United Kingdom", "Belgium", "Switzerland"],
-        "name": "Map Centre: "
-      }
+      "name": "angles",
+      "value": [0, 0],
+      "on": [{"events": "mousedown", "update": "[rotateX, centerY]"}]
+    },
+    {
+      "name": "cloned",
+      "value": null,
+      "on": [{"events": "mousedown", "update": "copy('projection')"}]
+    },
+    {
+      "name": "start",
+      "value": null,
+      "on": [{"events": "mousedown", "update": "invert(cloned, xy())"}]
+    },
+    {
+      "name": "drag",
+      "value": null,
+      "on": [
+        {
+          "events": "[mousedown, window:mouseup] > window:mousemove",
+          "update": "invert(cloned, xy())"
+        }
+      ]
+    },
+    {
+      "name": "delta",
+      "value": null,
+      "on": [
+        {
+          "events": {"signal": "drag"},
+          "update": "[drag[0] - start[0], start[1] - drag[1]]"
+        }
+      ]
+    },
+    {
+      "name": "rotateX",
+      "value": 0,
+      "on": [{"events": {"signal": "delta"}, "update": "angles[0] + delta[0]"}]
+    },
+    {
+      "name": "centerY",
+      "value": 46.81,
+      "on": [
+        {
+          "events": {"signal": "delta"},
+          "update": "clamp(angles[1] + delta[1], -60, 60)"
+        }
+      ]
     }
   ],
-  "projection": {"type": "equirectangular", "scale": {"expr": "zoom_level"}, "center": {"expr": "center_to"}},
+  "projection": {
+    "type": "equirectangular",
+    "center": {"expr": "center_to"},
+    "scale": {"signal": "scale"},
+    "rotate": [{"signal": "rotateX"}, 0, 0],
+    "center": [2.03, {"signal": "centerY"}],
+    "translate": [{"signal": "tx"}, {"signal": "ty"}]
+  },
   "layer": [
     {
       "data": {
