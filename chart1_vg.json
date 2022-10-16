@@ -69,8 +69,7 @@
   ],
   "projection": {
     "type": "equirectangular",
-    "center": {"expr": "center_to"},
-    "scale": {"signal": "scale"},
+    "scale": {"expr": "scale"},
     "rotate": [{"signal": "rotateX"}, 0, 0],
     "center": [2.03, {"signal": "centerY"}],
     "translate": [{"signal": "tx"}, {"signal": "ty"}]
