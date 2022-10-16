@@ -1,0 +1,95 @@
+Country,Award,Type,Price
+Denmark,1 Star,MinPriceUSD,155.4642105
+Denmark,1 Star,MaxPriceUSD,240.19
+Sweden,1 Star,MinPriceUSD,119.96625
+Sweden,1 Star,MaxPriceUSD,162.805
+Switzerland,1 Star,MinPriceUSD,105.2044828
+Switzerland,1 Star,MaxPriceUSD,193.4463218
+Portugal,1 Star,MinPriceUSD,98.4688
+Portugal,1 Star,MaxPriceUSD,144.2608
+Germany,1 Star,MinPriceUSD,97.26970149
+Germany,1 Star,MaxPriceUSD,146.2551493
+Austria,1 Star,MinPriceUSD,94.70272727
+Austria,1 Star,MaxPriceUSD,142.2809091
+Italy,1 Star,MinPriceUSD,92.7647678
+Italy,1 Star,MaxPriceUSD,135.4747988
+United Kingdom,1 Star,MinPriceUSD,82.32425676
+United Kingdom,1 Star,MaxPriceUSD,123.3375
+Spain,1 Star,MinPriceUSD,75.14335227
+Spain,1 Star,MaxPriceUSD,114.2389773
+France,1 Star,MinPriceUSD,69.3867118
+France,1 Star,MaxPriceUSD,137.2523404
+Netherlands,1 Star,MinPriceUSD,66.17483871
+Netherlands,1 Star,MaxPriceUSD,127.6582796
+Belgium,1 Star,MinPriceUSD,60.65296296
+Belgium,1 Star,MaxPriceUSD,126.9865741
+Denmark,2 Stars,MinPriceUSD,305.65875
+Denmark,2 Stars,MaxPriceUSD,321.13125
+Sweden,2 Stars,MinPriceUSD,249.6975
+Sweden,2 Stars,MaxPriceUSD,249.6975
+Switzerland,2 Stars,MinPriceUSD,194.9685714
+Switzerland,2 Stars,MaxPriceUSD,296.7761905
+United Kingdom,2 Stars,MinPriceUSD,171.1427778
+United Kingdom,2 Stars,MaxPriceUSD,228.0583333
+Portugal,2 Stars,MinPriceUSD,161.78
+Portugal,2 Stars,MaxPriceUSD,200.9733333
+Germany,2 Stars,MinPriceUSD,159.3551111
+Germany,2 Stars,MaxPriceUSD,222.4891111
+Italy,2 Stars,MinPriceUSD,139.7557895
+Italy,2 Stars,MaxPriceUSD,205.8015789
+Spain,2 Stars,MinPriceUSD,136.439375
+Spain,2 Stars,MaxPriceUSD,180.658125
+France,2 Stars,MinPriceUSD,124.7364865
+France,2 Stars,MaxPriceUSD,235.8402703
+Austria,2 Stars,MinPriceUSD,120.25
+Austria,2 Stars,MaxPriceUSD,185.7966667
+Belgium,2 Stars,MinPriceUSD,109.5772727
+Belgium,2 Stars,MaxPriceUSD,216.515
+Netherlands,2 Stars,MinPriceUSD,99.97428571
+Netherlands,2 Stars,MaxPriceUSD,192.9447619
+Denmark,3 Stars,MinPriceUSD,417.075
+Denmark,3 Stars,MaxPriceUSD,417.075
+Sweden,3 Stars,MinPriceUSD,397.62
+Sweden,3 Stars,MaxPriceUSD,397.62
+Austria,3 Stars,MinPriceUSD,265.19
+Austria,3 Stars,MaxPriceUSD,265.19
+France,3 Stars,MinPriceUSD,233.3887097
+France,3 Stars,MaxPriceUSD,358.3803226
+Spain,3 Stars,MinPriceUSD,231.7972727
+Spain,3 Stars,MaxPriceUSD,276.1
+Switzerland,3 Stars,MinPriceUSD,224.87
+Switzerland,3 Stars,MaxPriceUSD,354.6
+Italy,3 Stars,MinPriceUSD,222.8809091
+Italy,3 Stars,MaxPriceUSD,288.3836364
+Germany,3 Stars,MinPriceUSD,211.1477778
+Germany,3 Stars,MaxPriceUSD,268.6322222
+Netherlands,3 Stars,MinPriceUSD,198.64
+Netherlands,3 Stars,MaxPriceUSD,306.215
+Belgium,3 Stars,MinPriceUSD,188.1333333
+Belgium,3 Stars,MaxPriceUSD,300.21
+United Kingdom,3 Stars,MinPriceUSD,184.1075
+United Kingdom,3 Stars,MaxPriceUSD,274.75375
+Austria,All,MinPriceUSD,112.69
+Austria,All,MaxPriceUSD,163.6144444
+Belgium,All,MinPriceUSD,71.62120301
+Belgium,All,MaxPriceUSD,145.7030827
+Denmark,All,MinPriceUSD,214.9393103
+Denmark,All,MaxPriceUSD,274.7175862
+France,All,MinPriceUSD,84.14546624
+France,All,MaxPriceUSD,160.002299
+Germany,All,MinPriceUSD,109.1291615
+Germany,All,MaxPriceUSD,160.329441
+Italy,All,MinPriceUSD,101.4124462
+Italy,All,MaxPriceUSD,147.1802151
+Netherlands,All,MinPriceUSD,74.57758621
+Netherlands,All,MaxPriceUSD,142.5559483
+Portugal,All,MinPriceUSD,110.7225806
+Portugal,All,MaxPriceUSD,155.2374194
+Spain,All,MinPriceUSD,91.9683105
+Spain,All,MaxPriceUSD,132.0740639
+Sweden,All,MinPriceUSD,157.8985714
+Sweden,All,MaxPriceUSD,190.537619
+Switzerland,All,MinPriceUSD,125.4210811
+Switzerland,All,MaxPriceUSD,217.3507207
+United Kingdom,All,MinPriceUSD,96.19206897
+United Kingdom,All,MaxPriceUSD,141.1323563

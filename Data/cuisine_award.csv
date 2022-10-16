@@ -1,0 +1,25 @@
+Cuisine,Award,value,rank,percentage
+Modern Cuisine,1 Star,920,1,37%
+Creative,1 Star,498,2,20%
+Classic Cuisine,1 Star,119,3,5%
+Modern French,1 Star,95,4,4%
+Contemporary,1 Star,94,5,4%
+Creative,2 Stars,186,1,45%
+Modern Cuisine,2 Stars,87,2,21%
+Classic Cuisine,2 Stars,21,3,5%
+Contemporary,2 Stars,16,4,4%
+Modern French,2 Stars,16,5,4%
+Creative,3 Stars,52,1,48%
+Modern Cuisine,3 Stars,23,2,21%
+Classic French,3 Stars,6,3,6%
+Contemporary,3 Stars,5,4,5%
+Classic Cuisine,3 Stars,3,5,3%
+Modern Cuisine,All,1030,1,34%
+Creative,All,736,2,25%
+Classic Cuisine,All,143,3,5%
+Contemporary,All,115,4,4%
+Modern French,All,113,5,4%
+Other,1 Star,739,6,30%
+Other,2 Stars,87,6,21%
+Other,3 Stars,19,6,18%
+Other,All,849,6,28%
