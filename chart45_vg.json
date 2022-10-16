@@ -7,7 +7,7 @@
       "width": 475,
       "height": 190,
       "data": {
-        "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/michelin_cleaned.csv"
+        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/michelin_cleaned.csv"
       },
       "layer": [
         {
@@ -71,7 +71,7 @@
       "width": 250,
       "height": 200,
       "data": {
-        "url": "https://raw.githubusercontent.com/nadzmi1234/3179/main/Assignment2/data/country_price.csv"
+        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/country_price.csv"
       },
       "transform": [
         {
