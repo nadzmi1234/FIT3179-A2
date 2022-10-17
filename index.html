@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <!-- Import CSS layout -->
     <link rel="stylesheet" href="layout.css">
 
@@ -31,26 +37,23 @@
         <!-- Header -->
         <div class="pure-g">
             <div class="pure-u-1-1">
-                <h1 class="title">Main Title/Main Header</h1>
-                <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="title">Europe's Michelin Star Restaurants</p>
+                <p><b>Europe</b> has the most Michelin Stars our of all continents, and in this article we will explore
+                    on how awards are ditributed amongst country and cuisine. We will also explore how price is
+                    distributed, and which country has the cheapest and most expensive average price.</p>
             </div>
         </div>
         <!-- end Header -->
 
         <!-- First Chart -->
         <div class="pure-g">
-            <!-- <div class="pure-u-1-1">
-                <h3>This is A Map of Europe</h3>
-                <p>ABDEFGHIJKLMNOPQRTSTUVWXYZ</p>
-            </div> -->
-
             <div class="pure-u-1-1">
-                <div class="chart" id="map"></div>
+                <div id="map"></div>
+                <div class="note">
+                    <i style="color: rgb(96, 94, 94);">
+                        * Try zooming and dragging the map using mouse
+                    </i>
+                </div>
             </div>
         </div>
 
@@ -59,13 +62,10 @@
         <!-- Second/Third Chart -->
         <div class="pure-g">
             <div class="pure-u-1-1">
-                <h2 class="title">Header 2</h2>
-                <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p><b>France</b> has the most award received out of all country in Europe, followed by Italy and
+                    Germany. In term of <b>cuisine</b>, most stars are awarded to <b>Modern Cuisine</b> and
+                    <b>Creative</b>.
+                </p>
             </div>
 
             <div class="pure-u-1-1">
@@ -77,17 +77,21 @@
         <!-- Fourth/Fifth Chart -->
         <div class="pure-g">
             <div class="pure-u-1-1">
-                <h2 class="title">Header 2</h2>
-                <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>
+                    <b>Price</b> plays an important role in deciding the restaurant for some people. <b>Belgium</b> has
+                    the lowest average minimum price (cheapest course), and <b>Denmark</b> has the highest
+                        average minimum and maximum price. In term of price distribution, <b>higher star</b>
+                    restaurants are <b>more expensive</b> in average.
+                </p>
             </div>
 
             <div class="pure-u-1-1">
-                <div class="chart" id="chart45"></div>
+                <div id="chart45"></div>
+                <div class="note">
+                       <i style="color: rgb(96, 94, 94);">
+                           * Click the legend for filter
+                       </i>
+                </div>
             </div>
         </div>
         <!-- end Third Chart -->

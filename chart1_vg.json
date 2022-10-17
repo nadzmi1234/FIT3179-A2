@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 890,
+  "width": 920,
   "height": 500,
   
   "params": [
@@ -121,11 +121,15 @@
   ],
   "config": {
     "legend": {
-      "orient": "top-right",
+      "orient": "top-left",
       "fillColor": "white",
-      "offset": 40,
-      "labelFontSize": 12,
-      "titleFontSize": 13
+      "offset": 30,
+      "strokeWidth" : 0.2,
+      "strokeColor" : "black",
+      "clipHeight" : 12,
+      "padding":5,
+      "labelFontSize": 14,
+      "titleFontSize": 14
     }
   }
 }

@@ -2,7 +2,7 @@ body{
     background-color: #f4f2e1;
 }
 .page {
-    width: 900px;
+    width: 925px;
     background-color: #f9f8f7;
     margin: auto;
     padding: 50px;
@@ -19,6 +19,12 @@ body{
 }
 
 
+.note{
+    margin-bottom: 40px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
 #chart23 {
     width: 100%;
     /* outline: 2px solid rgba(89, 79, 79, 0.09); */
@@ -26,5 +32,15 @@ body{
 
 .title {
 /* Center horizontally*/
-text-align: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }

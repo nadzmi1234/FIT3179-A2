@@ -1,11 +1,82 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
+  "description": "Price",
   "hconcat": [
     {
-      "title": "Price Distribution Per Award",
-      "width": 475,
-      "height": 190,
+      "title": "Average Minimum & Maximum Price",
+      "width": 290,
+      "height": 210,
+      "data": {
+        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/country_price.csv"
+      },
+      "transform": [
+        {
+          "filter": "award_highlight_Award_legend == null || datum.Award == award_highlight_Award_legend"
+        }
+      ],
+      "encoding": {
+        "x": {"field": "Price", "type": "quantitative", "title": "Price (USD)"},
+        "y": {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Country",
+          "sort": {"field": "Price", "order": "ascending"},
+          "axis": {
+            "offset": 5,
+            "ticks": false,
+            "minExtent": 70,
+            "domain": false
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "detail": {"field": "Country", "type": "nominal"},
+            "color": {"value": "#000000"}
+          }
+        },
+        {
+          "mark": {"type": "point", "filled": true},
+          "encoding": {
+            "x": {"aggregate": "min", "field": "Price"},
+            "size": {"value": 100},
+            "opacity": {"value": 1},
+            "tooltip": [
+              {
+                "aggregate": "min",
+                "field": "Price",
+                "title": "Average Minimum Price",
+                "format": ".0f"
+              }
+            ],
+            "color" : {"value":"#a5477f"}
+          }
+        },
+        {
+          "mark": {"type": "point", "filled": true},
+          "encoding": {
+            "x": {"aggregate": "max", "field": "Price"},
+            "size": {"value": 100},
+            "opacity": {"value": 1},
+            "tooltip": [
+              {
+                "aggregate": "max",
+                "field": "Price",
+                "title": "Average Maximum Price",
+                "format": ".0f"
+              }
+            ],
+            "color" : {"value":"#a5477f"}
+          }
+        }
+      ]
+    },
+        {
+      "title": "Average Price Distribution By Award",
+      "width": 460,
+      "height": 210,
       "data": {
         "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/michelin_cleaned.csv"
       },
@@ -19,7 +90,11 @@
             }
           ],
           "transform": [
-            {"density": "MinPriceUSD", "groupby": ["Award"], "extent": [0,500]}
+            {
+              "density": "AveragePrice",
+              "groupby": ["Award"],
+              "extent": [0, 500]
+            }
           ],
           "mark": "area",
           "encoding": {
@@ -40,9 +115,14 @@
             "color": {
               "field": "Award",
               "type": "nominal",
+              "scale": {
+                "domain": ["1 Star", "2 Stars", "3 Stars"],
+                "range": ["#453fb4", "#faaf40", "#ee4036"]
+              
+            },
               "legend": {
                 "direction": "horizontal",
-                "offset": -569,
+                "offset": -200,
                 "labelOffset": 3,
                 "fillColor": "white",
                 "strokeColor": "whitesmoke",
@@ -55,66 +135,21 @@
         {
           "mark": "rule",
           "encoding": {
-            "x": {"aggregate": "mean", "field": "MinPriceUSD"},
+            "x": {"aggregate": "mean", "field": "AveragePrice"},
             "color": {"field": "Award"},
             "size": {"value": 3},
             "opacity": {
               "condition": {"param": "award_highlight", "value": 1},
               "value": 0.1
-            }
-          }
-        }
-      ]
-    },
-    {
-      "title": "Cheapest Food Across Country",
-      "width": 250,
-      "height": 200,
-      "data": {
-        "url": "https://raw.githubusercontent.com/nadzmi1234/FIT3179-A2/main/Data/country_price.csv"
-      },
-      "transform": [
-        {
-          "filter": "award_highlight_Award_legend == null || datum.Award == award_highlight_Award_legend"
-        }
-      ],
-      "encoding": {
-        "x": {"field": "Price", "type": "quantitative", "title": "Price"},
-        "y": {
-          "field": "Country",
-          "type": "nominal",
-          "title": "Country",
-          "sort": {"field": "Price", "order": "ascending"},
-          "axis": {
-            "offset": 5,
-            "ticks": false,
-            "minExtent": 70,
-            "domain": false
-          }
-        }
-      },
-      "layer": [
-        {
-          "mark": "line",
-          "encoding": {
-            "detail": {"field": "Country", "type": "nominal"},
-            "color": {"value": "#db646f"}
-          }
-        },
-        {
-          "mark": {"type": "point", "filled": true},
-          "encoding": {
-            "x": {"aggregate": "min", "field": "Price"},
-            "size": {"value": 100},
-            "opacity": {"value": 1}
-          }
-        },
-        {
-          "mark": {"type": "point", "filled": true},
-          "encoding": {
-            "x": {"aggregate": "max", "field": "Price"},
-            "size": {"value": 100},
-            "opacity": {"value": 1}
+            },
+            "tooltip": [
+              {
+                "aggregate": "mean",
+                "field": "AveragePrice",
+                "format": ".0f",
+                "title": "Average Price (USD)"
+              }
+            ]
           }
         }
       ]
