@@ -52,7 +52,7 @@
       "transform": [{"filter": "Award == 'All' || datum.Award == Award"}]
     },
     {
-      "title": "Distribution of Cuisine by Award",
+      "title": "Cuisine Distribution by Award",
       "height": 240,
       "width": 345,
       "data": {
